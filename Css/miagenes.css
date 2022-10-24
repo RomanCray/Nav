@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    overflow-x: hidden;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.img-fondo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/1.jpg) repeat-y fixed;
+    background-size: 100% 100%;
+}
+
+.conteiner-nav {
+    position: fixed;  
+
+    width: 90vw;
+    height: 80px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px auto;
+
+    background: rgba(255, 255, 255, .6);
+    filter: drop-shadow(0px 2px 15px #555);
+    z-index: 10;
+    color: black;
+    border-radius: 3em;
+}
+
+.content-nav {
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+.content-nav.logo {
+    left: 20px;
+    width: 20%;
+    padding: 10px;
+    background: url('../img/LogoBAQ.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 80%;
+}
+
+.content-nav.nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 1.5% 10px;
+    overflow-y: hidden;
+    width: 55%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content-nav.nav div {
+    width: 19.5%;
+    display: inline-block;
+    margin: 0px auto;
+    font-size: 1.8em;
+    text-align: center;
+    height: 100%;
+    user-select: none;    
+    /* transition: all s ; */
+}
+
+.content-nav.nav div:hover ,.content-nav.redes i:hover {    
+    /* color: #A8E890;
+    text-decoration: underline; */
+    background: url('../img/pincelada.png');
+    background-size: 100% 100%;
+    /* color: #000;     */
+    /* text-shadow: 0 0 15px black; */
+    font-weight: 600;   
+}
+
+.content-nav.redes {
+    padding: 1.5% 10px;
+    right: 0;
+    width: 20%;
+    font-size: 1.8em;
+}
+
+.content-nav.redes i {    
+    font-size: 1em;
+    margin: 0 3px;
+    align-items: flex-end;
+    opacity: .6;
+    /* transition: all 2s; */
+}
+
+.texto {
+    /*alinear al centro usando position*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 0 35px black;    
+}
+
+.texto-p {
+    padding: 25px;
+    font-size: 2em;
+    text-align: justify;
+}
+
+.texto-p::first-line {
+    /*afecta a la priemra linea*/
+    color: blueviolet;
+}
+
+.texto-p::first-letter {
+    /*afecta a la priemra letra*/
+    font-size: 3em;
+}
+
+.texto-p img {
+    float: right;
+    width: 270px;
+    margin: 15px 0 15px 15px;
+}
+
+.content-img-btn {
+    position: relative;
+    height: 60px;
+}
+
+a {
+    position: absolute;
+    width: 40%;
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 3em;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 1px solid white;
+    padding: 3px;
+}
+
+.btn-siguiente {
+    background: #A8E890;
+    color: white;
+    text-shadow: 0 0 90px 1px black;
+    left: 0;
+}
+
+.btn-anterior {
+    background: red;
+    color: white;
+    right: 0;
+}
+
+.input {
+    width: 14em;
+    height: 1.8em;
+    border-radius: 3em;
+    padding: 0 15px;
+    font-size: .8em;
+    border: 1px solid lightgray;
+    color: #555;
+}
+
+.input::selection {
+    background: #db9a1f;
+    color: aliceblue;
+}
+
+.input:focus {
+    border: none;
+}
+
+.input::placeholder {
+    /* background: #A8E890; */
+    color: #db9a1f;
+}
+
+@media only screen and (max-width: 768px){
+    .texto-p img {        
+        width: 100%;        
+        margin: 15px 0;
+    }
+}

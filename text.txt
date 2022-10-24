@@ -1,0 +1,3 @@
+box-sizing => tiene dos valores importantes:
+            content-box:    mantiene el tamaño del widht y del height mas los valores del padinng
+            border-box:     mantiene el tamaño fijo del widht y del height

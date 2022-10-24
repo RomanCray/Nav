@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px 20px 0 20px;
+}
+
+.p-comtainer {
+    font-size: 12px;
+}
+p{
+    font-size: 4em;
+    user-select: none;
+    padding: 20px 0;
+}
+
+a {
+    width: 15em;
+    border-radius: 3em;
+    border: 0;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 25px;        
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-siguiente {
+    color: #fff;
+    background: #65ca00;
+    /* text-align: right; */
+}
+
+.text1 {
+    font-family: 'Cormorant', serif;
+}
+
+.text2 {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.text3 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    
+}
+
+.text4 {
+    font-family: 'Indie Flower', cursive;
+    color: brown;
+}
+
+.text5 {
+    font-family: 'Marck Script', cursive;
+}
+
+.text6 {
+    font-family: 'Megrim', cursive;
+}
+
+.text7 {
+    font-family: 'Monoton', cursive;
+    background: -webkit-linear-gradient(yellow,red);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    /* color: purple;   */
+}
+
+.text8 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.text9 {
+    font-family: 'Nixie One', cursive;
+}
+
+.text10 {
+    font-family: 'Noto Sans Wancho', sans-serif;
+    background: linear-gradient(yellow,blue,red),linear-gradient(yellow,blue,red),linear-gradient(yellow,blue,red);
+    -webkit-background-clip: text;        
+}
+
+.text11 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.text12 {
+    font-family: 'Questrial', sans-serif;
+}
+
+.text13 {
+    font-family: 'Rock Salt', cursive;
+    background: linear-gradient(yellow,yellow,blue,red);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.text14 {
+    font-family: 'Sacramento', cursive;
+}
+
+.text15 {
+    font-family: 'Silkscreen', cursive;  
+}
+
+.text16 {
+    font-family: 'Urbanist', sans-serif;
+}
