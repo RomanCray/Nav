@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,26 +12,26 @@ div div {
     height: 100px;
     width: 100px;
     background: yellow;
-}
+} */
 
-.contenedor {
-    /* position: absolute; */
+/* .contenedor {
+    position: absolute;
     border: 4px solid red;
     margin: 0;
     height: 100px;
     width: 100vw;
     background: url(../img/1.jpg);
-}
+} */
 
-.caja-1 {
+/* .caja-1 {
     right: 0;
-}
+} */
 
-.caja-2 {
-    /* top: 0; */
-}
+/* .caja-2 {
+    top: 0;
+} */
 
-.caja-3 {
+/* .caja-3 {
     right: 0;
     bottom: 0;
 }
@@ -46,4 +46,13 @@ div div {
     right: 0;
     bottom: 0;
     margin: auto;
+} */
+
+
+ a{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: yellow;
+    margin: 8px;
 }
