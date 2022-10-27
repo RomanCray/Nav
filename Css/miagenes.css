@@ -9,16 +9,11 @@
 
 hr {
     width: 95%;
-    margin: 20px auto;    
+    margin: 20px auto;
 }
 
-.img-fondo {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: url(../img/baq001.jpeg) repeat-y fixed;
-    background-size: 100% 100%;
-    filter: brightness(55%);
+.conteiner-nav-response {
+    display: none;
 }
 
 .conteiner-nav {
@@ -41,7 +36,7 @@ hr {
 .conteiner-nav.float {
     position: fixed;
 
-    width: 95vw;
+    width: 96vw;
     height: 80px;
 
     top: 0;
@@ -65,15 +60,14 @@ hr {
 
 .content-nav.logo {
     left: 20px;
-    width: 20%;
-    padding: 10px;
+    width: 18%;
     background: url('../img/Logo_Blanco_PNG.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 90% 90%;
+    background-size: 100% 100%;
 }
 
-.content-nav.logo.float{
+.content-nav.logo.float {
     left: 20px;
     width: 20%;
     padding: 10px;
@@ -89,7 +83,6 @@ hr {
     right: 0;
     bottom: 0;
     margin: auto;
-    padding: 1.5% 10px;
     overflow-y: hidden;
     width: 55%;
     align-items: center;
@@ -97,28 +90,28 @@ hr {
     display: flex;
 }
 
-.content-nav.nav div {    
+.content-nav.nav div {
     display: inline-block;
     margin: 0px auto;
-    font-size: 1.8em;
     text-align: center;
     height: 100%;
     user-select: none;
-    transition: background-size 1s ;
+    transition: background-size 1s;
 }
 
-.content-nav.nav div:hover {
-    color: #ec8323;
-    /* text-decoration: underline; */
-    /* background: url('../img/pincelada.png'); */
+.content-nav__a {
+    font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-nav__a:hover {
+    color: #ec8323 !important;
     background-size: 100% 100%;
-    /* color: #000;     */
-    /* text-shadow: 0 0 15px black; */
     font-weight: 600;
 }
 
 .content-nav.redes {
-    padding: 1.5% 10px;
     right: 0;
     width: 20%;
     font-size: 1.8em;
@@ -137,17 +130,13 @@ hr {
     font-weight: 600;
 }
 
-.texto {
-    /*alinear al centro usando position*/
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    text-align: center;
-    font-size: 4em;
-    color: white;
-    text-shadow: 0 0 35px black;
+.img-fondo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/baq001.jpeg) repeat-y fixed;
+    background-size: 100% 100%;
+    filter: brightness(55%);
 }
 
 .texto-p {
@@ -179,7 +168,7 @@ hr {
     width: 90%;
 }
 
-a {
+.tranzaction {
     position: absolute;
     width: 40%;
     display: block;
@@ -231,6 +220,114 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .conteiner-nav {
+        display: none;
+    }
+
+    .conteiner-nav-response {
+        position: fixed;
+        width: 100%;
+        height: 10vh;/* 95vh*/
+        display: block;
+        z-index: 11;
+        overflow: hidden;
+        color: #fff;
+        margin: 20px auto;   
+        transition: all 0.35s;     
+    }
+
+    .conteiner-nav-response.float {        
+        width: 96vw;        
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 10px auto;                
+        background: rgba(255, 255, 255, .8);
+        filter: drop-shadow(0px 2px 15px #555);
+        z-index: 10;
+        color: black;
+        border-radius: 3em;
+    }
+
+    .conteiner-nav-response div {        
+        display: inline-block;
+        text-align: center;
+        height: 10vh;
+    }
+
+    .content-nav-responsive.nav {
+        left: 0;        
+        width: 20%;        
+    }
+
+    .content-nav-responsive.nav i {
+        font-size: 1.5em;
+    }   
+
+    .content-nav-responsive.logo {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 45%;
+
+        background: url('../img/Logo_Blanco_PNG.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 150%
+    }
+
+    .content-nav-responsive.logo.float {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;        
+
+        background: url('../img/LogoBAQ.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    .content-nav-responsive.redes {        
+        right: 0;
+        width: 28%;
+    }
+
+    .content-nav-responsive.redes i {
+        font-size: 1.5em;
+    }
+
+    .content-nav-responsive.lista {
+        width: 100%;
+        height: 100% !important;
+        /* background: red; */
+        z-index: 13;
+        color: #555;
+        font-weight: 500;
+        /* display: none; */
+    }
+
+    .lista div {
+        display: block;
+        height: 5%;
+        overflow-y: hidden;
+    }
+
+    .lista hr {
+        width: 95%;
+        opacity: .2;
+        border: 1px solid #A8E890;
+    }
+
+    .hr {
+        width: 65% !important;
+    }
+
     .texto-p img {
         width: 100%;
         margin: 15px 0;
@@ -241,9 +338,10 @@ a {
         height: auto;
     }
 
-    a{
+    .tranzaction {
         position: static;
         display: inline-block;
         width: 100%;
-    }
+        display: none;
+    }    
 }
