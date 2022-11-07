@@ -1,7 +1,6 @@
 
 const changeNav = () => {
-    let nav = document.querySelector('.conteiner-nav-response');
-    console.log('supersi');
+    let nav = document.querySelector('.conteiner-nav-response');    
     if (window.screen.width < 769) {
         if (document.querySelector('.conteiner-nav-response').offsetTop < document.documentElement.scrollTop) {
 
@@ -45,8 +44,7 @@ const changeNav = () => {
     }
 };
 
-document.querySelector('.content-nav-responsive.nav').addEventListener('click', () => {
-
+const navbar_response = () => {
     let lista = document.querySelector('.lista');
     let nav = document.querySelector('.conteiner-nav-response');
 
@@ -86,15 +84,22 @@ document.querySelector('.content-nav-responsive.nav').addEventListener('click', 
     }
 
     lista.classList.toggle('display');
+};
+
+document.querySelector('.content-nav-responsive.nav').addEventListener('click', () => {
+    navbar_response();
+});
+
+window.addEventListener('scroll', (e) => {
+    let lista = document.querySelector('.lista');
+    if (lista.className.indexOf('display') !== -1) {
+        if (e.isTrusted) {
+            navbar_response();
+        }
+    }    
 });
 
 window.addEventListener('scroll', changeNav);
-
-const resposiveNav = () => {
-    window.screen.width < 769 ? document.querySelector('.content-nav.nav').innerHTML = `
-        <i class="fa-solid fa-bars">`: console.log();
-}
-
 // resposiveNav();
 
 // window.screen.width

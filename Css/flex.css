@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  background-color: black;
+  display: flex;
+  flex-direction: row; 
+  /*  
+     por defecto el valor es de 'row'(fila)
+     pero este se le puede dar la vuelta con
+     el valor de 'row-reverse' y se puede poner
+     en una posicion vertical con el valor de 
+     'colum' y de la misma manera se le puede dar
+     la vuelta con 'colum-reverse'
+     */
+  flex-wrap: wrap; /*
+    mantiene el tamño de las cajas y las tira hacia
+    abajo para mentenerlas del mismo tamaño
+    */
+  /* justify-content: space-evenly; */
+  /*
+        center:         centra el contenido
+        end:            manda todo al final
+        space-around:   funciona como un margin auto
+        space-between:  separa las cajas lo mas posible
+        space-evenly:   separa las cajas a una misma distancia
+    */
+  height: 50vh;
+  /* align-items: center;align-items es para una sola linea de items */
+  /* align-content: center; */
+}
+
+.flex-items {
+  background: #b1afff;
+  margin: 5px;
+  height: 120px;
+  min-width: 120px;  
+  text-align: center;
+  flex: 1 ;/* es un shortham de : flex-grow,flex-shrink,flex-basis*/
+}
+
+.primera {
+  background: #790252;
+  /* 
+        propiedades de los items cuando el contenedor es flex
+        align-self:     maneja el cross axis (eje Y) star,center,end
+    */
+    align-self: flex-end;
+    flex-grow: 2; /* toma el tamaño sobrante y se lo añade a las cajas*/    
+    order: 1;
+}
+
+.ultima {
+  background: #cdf0ea;
+  /* 
+        propiedades de los items cuando el contenedor es flex
+        align-self:     maneja el cross axis (eje Y) star,center,end
+    */
+  align-self: center;
+  flex-grow: 2.4;
+  flex-basis: 215px; /* funciona como el with en flex e mas importante q el with*/
+  /* order: 5; */
+}
